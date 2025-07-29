@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: nvcrimagepullsecret
+type: kubernetes.io/dockerconfigjson
+data:
+  .dockerconfigjson: eyJhdXRocyI6eyJudmNyLmlvIjp7InVzZXJuYW1lIjoiJG9hdXRodG9rZW4iLCAicGFzc3dvcmQiOiJNakJoTUdWMGIzUTRNekZ6TlRoc09UY3lhM0EyYm5Gbk1qQTZaVFpsWkdGa1lUUXROelV6T0MwME5EY3pMVGt6TW1NdFlUZG1OMlJoT1RkaVl6UTEiIH19fQ==

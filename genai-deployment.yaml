@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: genai-deployment-madhu
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: genai-deployment-madhu
+  template:
+    metadata:
+      labels:
+        app: genai-deployment-madhu
+    spec:
+      containers:
+      - name: genaiperf
+        image: nvcr.io/nvidia/tritonserver:25.01-py3-sdk
+        command: ["sleep"]
+        args: ["infinity"]
+      volumes:
+      - name: genaistore
+        persistentVolumeClaim:
+          claimName: genaistore
+
+

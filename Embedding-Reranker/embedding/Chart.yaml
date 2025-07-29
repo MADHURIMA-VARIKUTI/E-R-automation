@@ -1,0 +1,9 @@
+apiVersion: v2
+dependencies:
+- name: nim-library
+  repository: alias:ngc
+  version: '>0.0.1'
+description: A NIM chart for the NV-EmbedQA-E5-V5 NIM by NVIDIA
+name: text-embedding-nim
+type: application
+version: 1.2.0

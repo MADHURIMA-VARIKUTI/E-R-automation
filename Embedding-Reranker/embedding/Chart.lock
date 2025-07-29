@@ -1,0 +1,6 @@
+dependencies:
+- name: nim-library
+  repository: https://helm.ngc.nvidia.com/nvidian/nemo-llm
+  version: 0.1.2
+digest: sha256:e5ffbdf64526e19ebaf55451f577862d63ecd05f9ed412e71d7292ffdcc356dd
+generated: "2024-11-19T21:26:55.284031854-05:00"

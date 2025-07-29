@@ -1,0 +1,21 @@
+[env]
+NGC_API_KEY="MjBhMGV0b3Q4MzFzNThsOTcya3A2bnFnMjA6ZTZlZGFkYTQtNzUzOC00NDczLTkzMmMtYTdmN2RhOTdiYzQ1"
+
+[helm]
+helm_chart_url = "https://helm.ngc.nvidia.com/nim/nvidia/charts/text-embedding-nim-1.2.0.tgz"
+helm_chart_file = "text-embedding-nim-1.2.0.tgz"
+
+[Constants]
+embedding_namespace = "embedding-nim1"
+reranking_namespace= "reranking-nim1"
+namespace="er-automation"
+secret-name = "nvcrimagepullsecret"
+gpu_limit = 1
+node_value = "adt-alto01-scs11.houcbglr1.hpecorp.net"
+image_repository = "10.14.75.21/ezmeral-common/nvcr.io/nim/nvidia/nv-embedqa-e5-v5-pb24h2"
+image_tag = "1.2.0"
+helm_release_name = "app-embedding"  
+model = "nvidia/nv-embedqa-e5-v5"
+pvc_name = "genaistore"
+image = "nvcr.io/nvidia/tritonserver:25.01-py3-sdk"
+
